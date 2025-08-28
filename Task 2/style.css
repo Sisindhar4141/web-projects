@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);}
+.site {
+    margin-left: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.site:hover {
+    cursor: pointer;
+    color: white;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    border-radius: 0.5rem;
+}
+h2{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+p{
+    margin-top: -5px;
+    text-align: center;
+    font-weight: bold;
+}
+form{
+    background-color: rgba(204, 212, 220, 0.648);
+    width: 500px;
+    max-width:400px;
+    margin-top: 1rem;
+    margin-left: 380px;
+    padding: 30px;
+    padding-right:3rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+form:hover{
+    cursor: pointer;
+}
+.label-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-left: 10px;
+    padding: 5px;
+    padding: 5px,10px;
+    
+}
+.label-group label{
+    font-weight: bold;
+    margin-left: 20px;    
+    margin-bottom: 2px;
+}
+.label-group input,
+.label-group textarea {
+  padding:3px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  margin-left:20%;
+  margin-right:5%;
+}
+.label-group-email{
+    margin-left: 70px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.label-group-email input{
+    width:63%;
+    padding: 6px;
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.label-group label{
+    width: 30%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.label-group input
+{   width: 60%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.label-group input{
+    margin-left: 20px;
+}
+.submit{
+    width: 15rem;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 5.5rem;
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #FFA500;
+    transition: background 0.5s, color 0.5s;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color:#cccc;
+    color: black;
+}
+.todo-section{
+    width: 50rem;
+    max-width: 500px;
+    margin-top: 2rem;
+    margin-left: 365px;
+    padding: 1px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);;
+    background-color:rgba(204, 212, 220, 0.648);
+}
+.to-do-input{
+    margin-left:10%;
+    margin-top: 5px;
+    padding: 0.5rem;
+    width: 15rem;
+}
+.add-btn{
+    width:7rem;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    margin: 20px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 2px;
+    background: #bdd6f9;
+    border-radius: 5px;
+}
+.add-btn:hover{
+    cursor: pointer;
+}
