@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(90deg, #a83279, #d38312);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+        .header:hover {
+            cursor: pointer;
+        }
+        .logo {
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ffe082;
+        }
+        .contact {
+            width: 100%;
+            max-width: 450px;
+            margin: 40px auto;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #f5c7de;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            padding: 30px 24px 24px 24px;
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #171616;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            text-align: left;
+        }
+        .contact label {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+        }
+        .contact input,
+        .contact textarea {
+            padding: 12px;
+            background-color: #e8e5e5;
+            border: 1px solid #e8e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            font-size: 15px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .contact textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .contact input:focus,
+        .contact textarea:focus {
+            border-color: #a83279;
+            outline: none;
+            box-shadow: 0 0 5px rgba(168, 50, 121, 0.3);
+        }
+        .contact button {
+            width: 120px;
+            margin: 10px auto 0 auto;
+            padding: 10px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(90deg, #a83279, #d38312);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .contact button:hover {
+            background: linear-gradient(90deg, #d38312, #a83279);
+            transform: translateY(-2px) scale(1.03);
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #a83279, #d38312);
+            color: white;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.8);
+        }
+        footer p {
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .contact {
+                max-width: 98vw;
+                padding: 16px 4vw;
+            }
+            .header, footer {
+                padding: 10px 5vw;
+            }
+            .navbar a {
+                margin: 0 4px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">My Portfolio</h2>
+        <nav class="navbar">
+            <a href="task.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button id="button" type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("button").onclick=()=>{
+            alert("your details is Submited..")
+        }
+    </script>
+</body>
+</html>

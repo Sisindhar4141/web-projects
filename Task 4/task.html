@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fully Functional Web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">My Portfolio</h2>
+        <nav class="navbar">
+            <a href="task.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a showcase of my work and projects.</p>
+    </section>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with a keen interest in creating dynamic and responsive web applications.</p>
+        <p>My skills include HTML, CSS, JavaScript, and Python.</p>
+    </section>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>To-Do List Project</h3>
+                <p>Live project to add and delete tasks.</p>
+                <button class="button">View Project</button>
+            </div>
+            <div class="project-card">
+                <h3>Python Projects</h3>
+                <ul>
+                    <li>Random Password Generator</li>
+                    <li>Weather API</li>
+                    <li>BMI Calculator</li>
+                </ul>
+                <button  class="python-pro">View Project</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelector(".button").onclick = () => {
+            window.location.href = "to_do.html";
+        }
+    </script>
+</body>
+</html>

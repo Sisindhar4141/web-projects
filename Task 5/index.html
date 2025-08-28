@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>E-commers site</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <i class="bi bi-robot"></i>
+            <h1>TechGadget India</h1>
+        </div>
+            <nav>
+               <a href="">Home</a>
+               <a href="">Product</a>
+               <a href="">features</a>
+               <a href="">About us</a>
+            </nav>
+            <div id="cartPanel" class="cart-panel">
+                <h2>Your Cart</h2>
+                <div id="cartItems"></div>
+                <div class="cart-footer">
+                    <p>Total: <span id="cartTotal">₹0</span></p>
+                    <button id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+            <button id="cartToggle" class="cart-toggle">
+                🛒 <span id="cartCount">0</span>
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>Next Generation Tech Gadgets</h1>
+                <p>Discover the latest in technology with our premium collection of gadgets and electronics.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Premium Tech Products">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="product-section">
+            <div class="product-header">
+                <h1>Featured Products</h1>
+                <p>Discover our curated collection of premium tech gadgets</p>
+            </div>
+            <div>
+                <button>All Products</button>
+                <button>Smartphones</button>
+                <button>Laptops</button>
+                <button>Accessories</button>
+            </div>
+            <div class="products-grid" id="productsGrid">
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="customer-section">
+            <div class="customer-header">
+                <h1>Why Choose TechGadget?</h1>
+                <p>Experience the difference with our premium service</p>
+            </div>
+            <div class="customer-benefits">
+                <div>
+                    <div>
+                        <i class="bi bi-truck"></i>
+                    </div>
+                        <h3>Free Shipping</h3>
+                        <p>Free shipping on all orders over ₹2000. Get your products delivered fast and secure.</p>
+                </div>
+                <div>
+                    <div>
+                        <i class="bi bi-shield-fill-check"></i>
+                    </div>
+                        <h3>Secure Payment</h3>
+                        <p>We use the latest encryption technology to keep your payment information safe.</p>
+                </div>
+                <div>
+                    <div>
+                        <i class="bi bi-clock"></i> 24/7
+                    </div>
+                        <h3>24/7 Support</h3>
+                        <p>Your trusted source for premium tech products and electronics.</p> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+       <div class="footer-container">
+            <div class="footer-about">
+                <h3>TechGadget India</h3>
+                <p>Your trusted source for premium tech products and electronics</p>
+            </div> 
+            <div class="footer-links">
+                <h3>For quicklink</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Product">Product</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#About us">About us</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>For contact</h3>
+                <ul class="footer-links"> 
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Bengaluru, KA</li>
+                    <li><i class="fas fa-phone"></i> +91 12345 12345</li>
+                    <li><i class="fas fa-envelope"></i> info@techgadgetindia.com</li>
+                </ul>
+            </div>
+       </div>
+       <hr>
+        <p style="text-align: center; padding: 10px; background-color: rgb(83, 83, 83); color: white;">&copy; 2025 TechGadget India. All rights reserved.</p>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>

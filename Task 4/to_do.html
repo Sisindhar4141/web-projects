@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             background: linear-gradient(90deg, #a83279, #d38312);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+        .header:hover {
+            cursor: pointer;
+        }
+        .logo{
+            color: white;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3 s;
+        }
+        .navbar a:hover{
+            color: #dfc090;
+        }
+        .main{
+            width: 450px;
+            height: auto;
+            margin:50px auto;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #f5c7de;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            padding: 30px 24px 24px 24px;
+            transition: transform 0.3s ease,background-color 0.3s ease;
+        }
+        .main:hover{
+            transform:translateY(-5px);
+        }
+        div h1{
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #000;
+        }
+        div input{
+            padding: 8px;
+            border: none;
+            box-shadow:0 2px 8px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+        }
+        div input:focus{
+            outline: none;
+        }
+        .add-btn{
+            padding: 8px;
+            margin-left: 10px;
+            border: none;
+            box-shadow:0 2px 8px rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight:bold;
+            transition: transfrom 0.3s ease;
+        }
+        .add-btn:hover{
+            cursor: pointer;
+            transform:scale(1.04);
+        }
+        footer{
+            margin-top:250px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+  <header class="header">
+        <h2 class="logo">My Portfolio</h2>
+        <nav class="navbar">
+            <a href="task.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<body>
+     <section class="main">
+        <div>
+            <h1>To-Do List</h1>
+            <input type="text" class="to-do-input" id="textinput" placeholder="Add message" required autocomplete="off" >
+            <button class="add-btn" id="addbtn">Add</button>
+            <ul id="taskList"></ul>
+    </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>
